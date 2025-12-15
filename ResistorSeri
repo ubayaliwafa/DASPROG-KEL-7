@@ -1,1 +1,13 @@
-
+void seriesResistor() {
+    int n;
+    double total = 0, r;
+    printf("\n--- Resistor Seri ---\n");
+    printf("Jumlah resistor : ");
+    scanf("%d", &n);
+    for (int i = 1; i <= n; i++) {
+        printf("Resistor %d (Ohm): ", i);
+        scanf("%lf", &r);
+        total += r;
+    }
+    printf("Total Hambatan Seri = %.2f Ohm\n", total);
+}
