@@ -1,1 +1,9 @@
-
+void ohmLaw() {
+    double I, R;
+    printf("\n--- Hukum Ohm ---\n");
+    printf("Masukkan arus (A): ");
+    scanf("%lf", &I);
+    printf("Masukkan hambatan (Ohm): ");
+    scanf("%lf", &R);
+    printf("Tegangan = %.2f Volt\n", I * R);
+}
