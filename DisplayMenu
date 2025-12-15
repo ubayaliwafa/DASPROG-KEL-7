@@ -1,1 +1,15 @@
-
+void displayMenu() {
+    printf("  KALKULATOR SEDERHANA \n");
+    printf("-------------------------------------------------\n");
+    printf(" 1. Hukum Ohm \n");
+    printf(" 2. Daya Listrik \n");
+    printf(" 3. Resistor Seri\n");
+    printf(" 4. Resistor Paralel\n");
+    printf(" 5. Desimal ke Biner/Oktal/Heksadesimal\n");
+    printf(" 6. Biner ke Desimal\n");
+    printf(" 7. Oktal ke Desimal\n");
+    printf(" 8. Heksadesimal ke Desimal\n");
+    printf(" 9. Keluar\n");
+    printf("-------------------------------------------------\n");
+    printf("Pilih perhitungan yang diinginkan : ");
+}
