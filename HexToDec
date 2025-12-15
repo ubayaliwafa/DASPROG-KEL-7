@@ -1,1 +1,19 @@
-
+void hexToDec() {
+    char hex[20];
+    int dec = 0, val;
+    printf("\n--- Heksadesimal ke Desimal ---\n");
+    printf("Masukkan heksadesimal: ");
+    scanf("%s", hex);
+    for (int i = 0; hex[i] != '\0'; i++) {
+        if (hex[i] >= '0' && hex[i] <= '9')
+            val = hex[i] - '0';
+        else if (hex[i] >= 'A' && hex[i] <= 'F')
+            val = hex[i] - 'A' + 10;
+        else if (hex[i] >= 'a' && hex[i] <= 'f')
+            val = hex[i] - 'a' + 10;
+        else
+            val = 0;
+        dec = dec * 16 + val;
+    }
+    printf("Desimal = %d\n", dec);
+}
