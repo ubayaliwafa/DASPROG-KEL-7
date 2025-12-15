@@ -1,1 +1,9 @@
-
+void powerCalc() {
+    double V, I;
+    printf("\n--- Daya Listrik ---\n");
+    printf("Masukkan tegangan (V): ");
+    scanf("%lf", &V);
+    printf("Masukkan arus (A): ");
+    scanf("%lf", &I);
+    printf("Daya = %.2f Watt\n", V * I);
+}
