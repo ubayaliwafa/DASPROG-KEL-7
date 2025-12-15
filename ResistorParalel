@@ -1,1 +1,18 @@
+void parallelResistor() {
+    int n;
+    double sum = 0, r;
+    printf("\n--- Resistor Paralel ---\n");
+    printf("Jumlah resistor : ");
+    scanf("%d", &n);
+    for (int i = 1; i <= n; i++) {
+        printf("Resistor %d (Ohm): ", i);
+        scanf("%lf", &r);
+        if (r == 0) {
+            printf("Error: Resistor tidak boleh 0 Ohm!\n");
+            return;
+        }
+        sum += 1.0 / r;
+    }
+    printf("Total Hambatan Paralel = %.2f Ohm\n", 1.0 / sum);
+}
 
